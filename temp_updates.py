@@ -23,7 +23,7 @@ webhook_url = ''
 while True:
     if psutil.sensors_temperatures():
         a = psutil.sensors_temperatures()
-        print(a)
+        # print(a)
         # exit()
         cputemp_str = a['k10temp'][0] 
         cpu_current = cputemp_str[1]
