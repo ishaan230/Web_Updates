@@ -5,10 +5,14 @@
 ## <br> Usage
 
 ### Clone the repository
-``` git clone https://github.com/ishaan230/Web_Updates```
+``` 
+git clone https://github.com/ishaan230/Web_Updates
+```
 
 ### Navigate to the directory
-``` cd Web_Updates ```
+``` 
+cd Web_Updates 
+```
 
 ## Discord 
 ### Setup Discord:
@@ -24,4 +28,6 @@
 #### 5. Copy the webhook url from each of them and paste it into updates.py
 
 #### 6. Run the file
-```python3 updates.py```
+```
+python3 updates.py
+```
