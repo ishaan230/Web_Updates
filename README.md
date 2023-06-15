@@ -35,3 +35,4 @@ pip install -r requirements.txt
 ```
 python3 updates.py
 ```
+#### 7. logs are in generated in logs/log.txt

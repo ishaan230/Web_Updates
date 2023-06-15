@@ -2,7 +2,10 @@ import psutil
 import requests
 import time
 import json
-
+import os
+from datetime import datetime
+time_now = datetime.now()
+current_time = time_now.strftime("%H:%M:%S")
 def send_discord_webhook_battery(message):
     payload = {
         'content': message
@@ -15,10 +18,11 @@ def send_discord_webhook_battery(message):
     webhook_url_battery = ''
 
     response = requests.post(webhook_url_battery, data=json.dumps(payload), headers=headers)
+
     if response.status_code == 204:
-        print("Message sent successfully to Discord!")
+        os.system(f"echo 'Battery update sent successfully to Discord! at {current_time}' >> logs/log.txt")
     else:
-        print("Failed to send message to Discord. Status code:", response.status_code)
+        os.system(f"echo 'Failed to send Battery update to Discord at {current_time}' >> logs/log.txt")
 
 def send_discord_webhook_temp(message):
     payload = {
@@ -33,9 +37,9 @@ def send_discord_webhook_temp(message):
 
     response = requests.post(webhook_url_temp, data=json.dumps(payload), headers=headers)
     if response.status_code == 204:
-        print("Message sent successfully to Discord!")
+        os.system(f"echo 'Temp update sent successfully to Discord! at {current_time}' >> logs/log.txt")
     else:
-        print("Failed to send message to Discord. Status code:", response.status_code)
+        os.system(f"echo 'Failed to send Temp update to Discord at {current_time}' >> logs/log.txt")
 
 
 def send_discord_webhook_cpu(message):
@@ -51,9 +55,9 @@ def send_discord_webhook_cpu(message):
 
     response = requests.post(webhook_url_cpu, data=json.dumps(payload), headers=headers)
     if response.status_code == 204:
-        print("Message sent successfully to Discord!")
+        os.system(f"echo 'Cpu update sent successfully to Discord! at {current_time}' >> logs/log.txt")
     else:
-        print("Failed to send message to Discord. Status code:", response.status_code)
+        os.system(f"echo 'Failed to send CPU update to Discord at {current_time}' >> logs/log.txt")
 
 while True:
 # Check if the PC is awake
