@@ -1,6 +1,7 @@
 # Get PC Updates on web anywhere , anytime using Discord
 
-## Monitor your PC / Server on discord anytime and anywhere on the intervals of 5 mins.
+### Monitor your PC / Server on discord anytime and anywhere on the intervals of 5 mins.
+![alt text](https://www.shutterstock.com/shutterstock/videos/1077996398/thumb/7.jpg?ip=x480)
 
 ## <br> Usage
 
