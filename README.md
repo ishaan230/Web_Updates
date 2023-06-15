@@ -1,4 +1,3 @@
-# Get PC Updates on web anywhere , anytime using Discord
 
 ### Monitor your PC / Server on discord anytime and anywhere on the intervals of 5 mins.
 ![alt text](https://www.shutterstock.com/shutterstock/videos/1077996398/thumb/7.jpg?ip=x480)
@@ -6,10 +5,10 @@
 ## <br> Usage
 
 ### Clone the repository
-``` git clone https://github.com/ishaan230/Web-PC-Updates```
+``` git clone https://github.com/ishaan230/Web_Updates```
 
 ### Navigate to the directory
-``` cd Web-PC-Updates ```
+``` cd Web_Updates ```
 
 ## Discord 
 ### Setup Discord:
