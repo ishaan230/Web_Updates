@@ -13,6 +13,10 @@ git clone https://github.com/ishaan230/Web_Updates
 ``` 
 cd Web_Updates 
 ```
+### Install Requirements
+```
+pip install -r requirements.txt
+```
 
 ## Discord 
 ### Setup Discord:
