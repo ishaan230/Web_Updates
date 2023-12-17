@@ -31,8 +31,15 @@ pip install -r requirements.txt
 
 #### 5. Copy the webhook url from each of them and paste it into updates.py
 
-#### 6. Run the file
+#### 6. Add a cronjob
 ```
-python3 updates.py
+crontab -e
 ```
-#### 7. logs are in generated in logs/log.txt
+#### 7. Add time in cronjob tasks in the end(5 mins interval)
+```
+*/5 * * * * /bin/python3 "ENTER YOUR PATH TO updates.py file"
+```
+
+#### 8. You are ready !
+
+#### 9. logs are in generated in logs/log.txt
